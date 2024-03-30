@@ -1,0 +1,124 @@
+<div
+  style="font-family: 'Big Shoulders Stencil Display', cursive;
+font-family: 'Londrina Solid', cursive; background-color: #c5c6c7; border-radius: 12px; padding-left: 2vh; padding-right: 2vh;">
+
+  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <button class="btn btn-info me-md-2" type="button" routerLink="/"
+      style="border:solid #1F2833;background-color: pink; margin: 1vw;">Home
+    </button>
+    
+
+    <button class="btn btn-info me-md-2" type="button" routerLink="/profile"
+      style="border:solid #1F2833;background-color: pink; margin: 1vw;">Profile
+    </button>
+    <button class="btn btn  me-md-2" style=" margin: 1vw; color: pink; background-color:#1F2833 ;">
+      <h3>Package</h3>
+    </button>
+
+  </div>
+  <hr style="height: 2px; margin: 1%;padding: 0;">
+  <div class="row row-cols-1 row-cols-md-3 g-1">
+    <div class="col">
+      <div class="card shadow-lg" style="margin: 2vh;">
+        <img src="assets\packi\hatha-yoga.svg" class="card-img-top" alt="..."
+          style="max-width: 20vh; align-self: center; padding-bottom: 1vh;">
+        <div class="card-body">
+          <div style="background-color: #1F2833; color: pink; border-radius: 5px;">
+            <h4 class="card-title" style=" text-align: center;">{{pac.HathaYogaThen }}</h4><!-- Hatha Yoga-Card 1-->
+          </div>
+          <p class="card-text">{{pac.HathaYogaS}}</p>
+          <div style=" color: #1F2833; display: flex; justify-content: flex-end; border-radius: 5px;  ">
+            <h5 class="card-title bg-info" style=" text-align: center; padding: .4vh; border-radius: 4px;background-color: pink  !important;"> Price :&#8377;2000</h5>
+            </div>
+        </div>
+        <button type="button" class="btn btn-info" style="background-color: pink; border-color: pink;"
+          (click)="pac.HathaYogaSBuy()">BUY</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-lg" style="margin: 2vh;">
+        <img src="assets\packi\vinyasa-yoga.svg" class="card-img-top" alt="..."
+          style="max-width: 20vh; padding-top: 1vh; align-self: center;">
+        <div class="card-body">
+          <div style="background-color: #1F2833; color: pink; border-radius: 4px;">
+            <h4 class="card-title" style=" text-align: center;">{{pac.VinyasaYogaM}}</h4> <!--Weigthlifting-card 2-->
+          </div>
+          
+          <p class="card-text">{{pac.VinyasaYogaNa}}</p>
+          <div style=" color: #1F2833; display: flex; justify-content: flex-end; border-radius: 5px;  ">
+            <h5 class="card-title bg-info" style=" text-align: center; padding: .4vh; border-radius: 4px;background-color: pink  !important;"> Price :&#8377;2000</h5>
+            </div>
+        </div>
+        <button type="button" class="btn btn-info" 
+          (click)="pac.VinyasaYogaMBuy()" style="background-color: pink; border-color: pink;">BUY</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-lg" style="margin: 2vh;">
+        <img src="assets\packi\iyengar-yoga.svg" class="card-img-top" alt="..."
+          style="max-width: 20vh; align-self: center; padding-bottom: 1vh;">
+        <div class="card-body">
+          <div style="background-color: #1F2833; color: pink; border-radius: 5px;">
+            <h4 class="card-title" style=" text-align: center;">{{pac.IyengarYoga}}</h4>
+            <!--Iyengar Yoga --card3 -->
+          </div>
+          <p class="card-text">{{pac.IyengarYo}}</p>
+          <div style=" color: #1F2833; display: flex; justify-content: flex-end; border-radius: 5px;  ">
+            <h5 class="card-title bg-info" style=" text-align: center; padding: .4vh; border-radius: 4px;background-color: pink  !important;"> Price :&#8377;2000</h5>
+            </div>
+        </div><button type="button" class="btn btn-info"
+          (click)="pac.IyengarYogaBuy()" style="background-color: pink; border-color: pink;">BUY</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-lg" style="margin: 2vh;">
+        <img src="assets\packi\ashtanga-yoga.svg" class="card-img-top" alt="..."
+          style="max-width: 20vh; align-self: center;">
+        <div class="card-body">
+          <div style="background-color: #1F2833; color: pink; border-radius: 5px;">
+            <h4 class="card-title" style=" text-align: center;">{{pac.AshtangaYoga}}</h4>
+            <!--Kick boxing -- card4-->
+          </div>
+          <p class="card-text">{{pac.AshtangaYo}}</p>
+          <div style=" color: #1F2833; display: flex; justify-content: flex-end; border-radius: 5px;  ">
+            <h5 class="card-title bg-info" style=" text-align: center; padding: .4vh; border-radius: 4px;background-color: pink  !important;"> Price :&#8377;2000</h5>
+            </div>
+        </div><button type="button" class="btn btn-info"
+          (click)="pac.AshtangaYogaBuy()" style="background-color: pink; border-color: pink;">BUY</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-lg" style="margin: 2vh;">
+        <img src="assets\packi\bikram-yoga.svg" class="card-img-top" alt="..."
+          style="max-width: 20vh; align-self: center; padding-bottom:1.2vh;">
+        <div class="card-body">
+          <div style="background-color: #1F2833; color: pink; border-radius: 5px;">
+            <h4 class="card-title" style=" text-align: center;">{{pac.BikramYoga}}</h4><!-- Bikram Yoga -- card5-->
+          </div>
+          <p class="card-text">{{pac.BikramYo}}</p>
+          <div style=" color: #1F2833; display: flex; justify-content: flex-end; border-radius: 5px;  ">
+            <h5 class="card-title bg-info" style=" text-align: center; padding: .4vh; border-radius: 4px;background-color: pink  !important;"> Price :&#8377;2000</h5>
+            </div>
+        </div><button type="button" class="btn btn-info"
+          (click)="pac.BikramYogaBuy()" style="background-color: pink; border-color: pink;">BUY</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-lg" style="margin: 2vh;">
+        <img src="assets\packi\kundalini-yoga.svg" class="card-img-top" alt="..." style="max-width: 20vh; align-self: center;">
+        <div class="card-body">
+          <div style="background-color: #1F2833; color: pink; border-radius: 5px;">
+            <h4 class="card-title" style=" text-align: center;">{{pac.KundaliniYoga}}</h4>
+            <!--sport--card5-->
+          </div>
+          <p class="card-text">
+            {{pac.KundaliniYo}} </p>
+            <div style=" color: #1F2833; display: flex; justify-content: flex-end; border-radius: 5px;  ">
+              <h5 class="card-title bg-info" style=" text-align: center; padding: .4vh; border-radius: 4px;background-color: pink  !important;"> Price :&#8377;2000</h5>
+              </div>
+        </div><button type="button" class="btn btn-info"
+          (click)="pac.KundaliniYogaBuy()" style="background-color: pink; border-color: pink; border-color: pink;">BUY</button>
+      </div>
+    </div>
+  </div>
+</div>

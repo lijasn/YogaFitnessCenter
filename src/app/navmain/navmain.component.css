@@ -1,0 +1,13 @@
+.nav-item :hover{
+background-color: black;
+}
+
+.nav-item{
+    button{
+        border-bottom-color: pink !important;
+        border-right-color:pink !important;
+        border-top-color:pink !important;
+        border-left-color:pink !important;
+    }
+    border-bottom-color: pink !important;
+}
