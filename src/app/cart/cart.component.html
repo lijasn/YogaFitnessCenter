@@ -1,7 +1,7 @@
 <div  style="font-family: 'Big Shoulders Stencil Display', cursive;
-font-family: 'Londrina Solid', cursive; background-color: #c5c6c7; max-height:200vh; ">
+font-family: 'Londrina Solid', cursive; background-color: #c5c6c7 !important; max-height:200vh; ">
     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-        <button class="btn btn  me-md-2" style=" margin: 1vw; color: pink; background-color:#1F2833 ;">
+        <button class="btn btn  me-md-2" style=" margin: 1vw; color: pink !important; background-color:#1F2833 ;">
             <h3>CART</h3>
         </button>
         <button class="btn btn-info me-md-2" type="button" routerLink="/profile"
@@ -25,7 +25,7 @@ font-family: 'Londrina Solid', cursive; background-color: #c5c6c7; max-height:20
                     <div class="card-body" style="background-color:  whitesmoke;  border-radius:12px ;">
                         <div *ngIf="isPackbuy">
                             <h3 class="bg-info"
-                                style="display: flex; justify-content: center; border-radius: 12px; padding:4px;">
+                                style="display: flex; justify-content: center; border-radius: 12px; padding:4px; background-color:pink !important ;">
                                 {{packname}}</h3>
                         </div>
                         <h5> {{packdesc}} </h5>
@@ -34,7 +34,7 @@ font-family: 'Londrina Solid', cursive; background-color: #c5c6c7; max-height:20
                                 <div class="row">
                                     <legend class="col-form-label col-sm-2 pt-0">
                                         <h5 class="bg-info"
-                                            style="display: flex; justify-content: center; border-radius: 12px; padding:4px;">
+                                            style="display: flex; justify-content: center; border-radius: 12px; padding:4px;background-color:pink !important ;">
                                             Level</h5>
                                     </legend>
                                     <div class="col-sm-10">
@@ -67,7 +67,7 @@ font-family: 'Londrina Solid', cursive; background-color: #c5c6c7; max-height:20
                                 <div class="row">
                                     <legend class="col-form-label col-sm-2 pt-0">
                                         <h5 class="bg-info"
-                                            style="display: flex; justify-content: center; border-radius: 12px; padding:4px;">
+                                            style="display: flex; justify-content: center; border-radius: 12px; padding:4px;background-color:pink !important ;">
                                             Add ons</h5>
                                     </legend>
                                     <div class="col-sm-10">
@@ -102,7 +102,7 @@ font-family: 'Londrina Solid', cursive; background-color: #c5c6c7; max-height:20
                                 <div class="row">
                                     <legend class="col-form-label col-sm-2 pt-0">
                                         <h5 class="bg-info"
-                                            style="display: flex; justify-content: center; border-radius: 12px; padding:4px;">
+                                            style="display: flex; justify-content: center; border-radius: 12px; padding:4px;background-color:pink !important ;">
                                             Payment</h5>
                                     </legend>
                                     <div class="col-sm-10">
@@ -136,12 +136,12 @@ font-family: 'Londrina Solid', cursive; background-color: #c5c6c7; max-height:20
                                         [(ngModel)]="couponcode">
                                 </div>
                                 <div class="col">
-                                    <input type="button" class="btn btn-info" Value="Apply" (click)="coupon($event)">
-                                    <p style="color: red; display: inline-block; margin-left: 1vw;">{{codemsg}} {{offer}}</p><p style="color: green; display: inline-block; margin-left: 1vw;">{{appliedmsg}} </p>
+                                    <input type="button" class="btn btn-info" style="background-color:pink !important ;" Value="Apply" (click)="coupon($event)">
+                                    <p style="color: red; display: inline-block; margin-left: 1vw;">{{codemsg}} {{offer}}</p><p style="color: green; display: inline-block; margin-left: 1vw;background-color:pink !important ;">{{appliedmsg}} </p>
                                 </div>
                             </div>                        
                             <div style="margin-top: 1vh; display:flex; justify-content: flex-end;">
-                                <h3 style="margin:1vh"> <span class="text-info">Adds ons + package &nbsp; </span> Total:{{pay}} </h3>
+                                <h3 style="margin:1vh;"> <span class="text-info" style="color:pink !important ;">Adds ons + package &nbsp; </span> Total:{{pay}} </h3>
                                 <button type="submit" class="btn btn-info btn-lg" style="background-color: pink;  border-color: pink;" value="Buy"
                                     [disabled]="fo.invalid">Buy</button>
                             </div>
