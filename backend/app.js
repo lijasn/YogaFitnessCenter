@@ -13,6 +13,7 @@ app.use(bodyparser.json());
 var db;
 //mongodb://localhost:27017
 mongodb.connect("mongodb://localhost:27017/yogausers?retryWrites=true&w=majority", (error, result) => {
+//mongodb.connect("mongodb+srv://lizanaidu:HprTbQKcJ27ymWwF@cluster0.3hx5pcb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", (error, result) => {
 
     if (error) {
         console.log("DB Not Connected");
